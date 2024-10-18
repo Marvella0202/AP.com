@@ -1,0 +1,124 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5dc;
+    color: #3b2a20;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 1fr;
+    height: 200vh;
+}
+
+header {
+    background-color: #d9c4a0;
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #3b2a20;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #3b2a20;
+}
+
+nav {
+    background-color: #e3d0b9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #5c3d2e;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #dbc3a5;
+    border-radius: 5px;
+    color: #3b2a20;
+    transform: scale(1.05);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.textbox {
+    background-color: #e8d7ba;
+    border-left: 6px solid #b29d7f;
+    padding: 25px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #3b2a20;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #d9c4a0;
+    color: #3b2a20;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    grid-column: 1 / span 2;
+}
+
+h1, h2 {
+    color: #5c3d2e;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #b29d7f;
+}
+
+em {
+    color: #8d6f52;
+}
+
+.textbox strong {
+    font-size: 20px;
+    color: #5c3d2e;
+}
+
+.textbox em {
+    font-style: italic;
+    color: #3b2a20;
+}
+
